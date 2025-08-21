@@ -1,0 +1,36 @@
+/* TitleHeader.css */
+
+.hdr {
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111827; 
+}
+
+.hdr__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #2563eb; 
+}
+
+.hdr__subtitle {
+  display: block;
+  margin-top: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280; 
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hdr__title {
+    font-size: 1.75rem;
+  }
+  .hdr__subtitle {
+    font-size: 0.9rem;
+  }
+}
