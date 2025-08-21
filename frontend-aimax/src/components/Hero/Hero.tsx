@@ -26,7 +26,7 @@ export const Hero = () => {
       </div>
 
       <div className="hero-media">
-        {/* si querés video */}
+        {}
         <video
           src={HeroVideo}
           autoPlay
