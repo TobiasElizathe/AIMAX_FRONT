@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import producto3 from "../../assets/prod1.webp";
 import producto1 from "../../assets/prod2.png";
-import producto2 from "../../assets/prod3.jpg";
+import producto2 from "../../assets/prod3.png";
 
 export const Productos = () => {
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
@@ -75,19 +75,20 @@ export const Productos = () => {
             <li><FaCheckCircle className="icon" /> Traducción multilingüe y reconocimiento de fórmulas</li>
           </ul>
         </div>
-
-        {/* Producto 3 */}
-        <div
-          ref={(el) => { cardsRef.current[2] = el; }}
-          data-index={2}
-          className={`producto-card ${visibleCards.includes(2) ? "visible" : ""}`}
-        >
-          <img src={producto3} alt="Especificaciones Técnicas" />
-          <h3>Especificaciones Técnicas</h3>
-          <p><strong>Android</strong>: Versión 14 - 4 GB RAM - 32 GB Almacenamiento - CPU 8 núcleos - GPU 4 núcleos</p>
-          <p><strong>Windows</strong>: Windows 10 - 8 GB RAM - Intel Core i7 - 1 TB Almacenamiento</p>
-          <p>Manejo simple, seguro y sin necesidad de internet para funciones básicas.</p>
-        </div>
+          {/* Producto 3 */}
+          <div
+            ref={(el) => { cardsRef.current[2] = el; }}
+            data-index={2}
+            className={`producto-card ${visibleCards.includes(2) ? "visible" : ""}`}
+          >
+            <img src={producto3} alt="Especificaciones Técnicas" />
+            <h3>Especificaciones Técnicas</h3>
+            <ul>
+              <li><FaCheckCircle className="icon" /> <strong>Android</strong>: Versión 14 - 4 GB RAM - 32 GB Almacenamiento - CPU 8 núcleos - GPU 4 núcleos</li>
+              <li><FaCheckCircle className="icon" /> <strong>Windows</strong>: Windows 10 - 8 GB RAM - Intel Core i7 - 1TB Almacenamiento</li>
+              <li><FaCheckCircle className="icon" /> Manejo simple, seguro y sin necesidad de internet para funciones básicas</li>
+            </ul>
+          </div>
       </div>
     </section>
   );

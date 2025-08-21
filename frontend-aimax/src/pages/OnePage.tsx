@@ -3,6 +3,7 @@ import "./OnePage.css";
 import { Navbar } from "../components/NavBar/NavBar";
 import {Hero} from "../components/Hero/Hero";
 import {Productos} from "../components/Products/Products";
+import { Beneficios } from "../components/Benefits/Benefits";
 
 const OnePage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const OnePage: React.FC = () => {
       <Navbar />
       <Hero />
       <Productos />
+      <Beneficios />
       {/* Aquí luego irán Hero, AboutUs, Products, etc. */}
     </div>
   );
