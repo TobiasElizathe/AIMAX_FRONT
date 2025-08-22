@@ -30,6 +30,13 @@ export const Navbar: React.FC<NavbarProps> = ({ refs }) => {
       </div>
 
       <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
+        {/* Botón de cerrar SOLO visible en mobile */}
+        {menuOpen && (
+          <div className="close-btn" onClick={() => setMenuOpen(false)}>
+            <FaTimes />
+          </div>
+        )}
+
         <ul>
           <li onClick={() => handleScroll(refs?.inicio)}>Inicio</li>
           <li onClick={() => handleScroll(refs?.productos)}>Productos</li>
@@ -42,6 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ refs }) => {
         </button>
       </div>
 
+      {/* Hamburger / X */}
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>

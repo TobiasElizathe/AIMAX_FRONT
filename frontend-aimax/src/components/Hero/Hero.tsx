@@ -1,8 +1,21 @@
 import "./Hero.css";
-import HeroVideo from "../../assets/hero.mp4"; // o una imagen si preferís
-// import HeroImage from "../../assets/hero.png";
+import HeroVideo from "../../assets/hero.mp4";
 
-export const Hero = () => {
+interface HeroProps {
+  refs?: {
+    productos: React.RefObject<HTMLDivElement | null>;
+    casos: React.RefObject<HTMLDivElement | null>;
+    contacto: React.RefObject<HTMLDivElement | null>;
+  };
+}
+
+export const Hero: React.FC<HeroProps> = ({ refs }) => {
+  const handleScroll = (ref?: React.RefObject<HTMLDivElement | null>) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="hero" id="inicio">
       <div className="hero-content">
@@ -16,17 +29,22 @@ export const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <a href="#contacto" className="btn-primary">
+          <button
+            className="btn-primary"
+            onClick={() => handleScroll(refs?.productos)}
+          >
             Ver Productos
-          </a>
-          <a href="#productos" className="btn-secondary">
+          </button>
+          <button
+            className="btn-secondary"
+            onClick={() => handleScroll(refs?.casos)}
+          >
             Ver funciones
-          </a>
+          </button>
         </div>
       </div>
 
       <div className="hero-media">
-        {}
         <video
           src={HeroVideo}
           autoPlay
@@ -35,8 +53,6 @@ export const Hero = () => {
           playsInline
           className="hero-video"
         />
-
-        
       </div>
     </header>
   );

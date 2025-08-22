@@ -28,7 +28,16 @@ const OnePage: React.FC = () => {
         }}
       />
       
-      <div ref={heroRef}><Hero /></div>
+      <div ref={heroRef}>
+        <Hero
+          refs={{
+            productos: productosRef,
+            casos: casosRef,
+            contacto: contactoRef,
+          }}
+        />
+      </div>
+
       <div ref={productosRef}><Productos /></div>
       <div ref={beneficiosRef}><Beneficios /></div>
       <div ref={casosRef}><CasosUso /></div>

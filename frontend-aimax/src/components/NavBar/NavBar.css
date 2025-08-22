@@ -132,7 +132,19 @@
 
   .menu-toggle { display: block; }
 }
-
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+}
+@media (min-width: 851px) {
+  .close-btn {
+    display: none; /* No mostrar en escritorio */
+  }
 /* Animaciones */
 @keyframes fadeIn {
   0% { opacity: 0; transform: scale(0.8); }
@@ -142,4 +154,6 @@
 /* Smooth scroll para toda la página */
 html {
   scroll-behavior: smooth;
+}
+
 }
