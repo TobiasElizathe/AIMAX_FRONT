@@ -1,0 +1,154 @@
+.casos-uso {
+  padding: 6rem 3rem;
+  background: #0f0f17;
+  color: #fff;
+  text-align: center;
+}
+
+.casos-uso__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.casos-uso__titulo .highlight {
+  background: linear-gradient(90deg, #7f5dff, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.casos-uso__subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.caso-uso-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.caso-uso-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caso-uso-row.reverse {
+  direction: rtl;
+}
+
+.caso-uso-row.reverse .caso-uso-texto {
+  direction: ltr;
+}
+
+.caso-uso-texto {
+  text-align: left;
+}
+
+.caso-uso-texto h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #c2f14d, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.caso-uso-texto p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.caso-uso-img img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(123, 47, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.caso-uso-img img:hover {
+  transform: scale(1.03);
+}
+
+.casos-uso__cta {
+  margin-top: 2rem;
+}
+
+.btn-cta {
+  background: linear-gradient(90deg, #7b2fff, #00ffd5);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0,255,213,0.5);
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .casos-uso__titulo {
+    font-size: 2.2rem;
+  }
+
+  .casos-uso__subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+  }
+
+  .caso-uso-texto h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .caso-uso-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .caso-uso-row.reverse {
+    direction: ltr;
+  }
+
+  .caso-uso-texto {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .casos-uso {
+    padding: 4rem 1.5rem;
+  }
+
+  .casos-uso__titulo {
+    font-size: 1.8rem;
+  }
+
+  .casos-uso__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .caso-uso-texto h3 {
+    font-size: 1.4rem;
+  }
+
+  .caso-uso-texto p {
+    font-size: 0.95rem;
+  }
+}

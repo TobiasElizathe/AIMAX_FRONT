@@ -42,7 +42,9 @@
   align-items: center;
   justify-content: center;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* ====  Tipografía básica  ==== */
 h1, h2 {
   line-height: 1.125;

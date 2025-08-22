@@ -1,0 +1,126 @@
+.contacto-footer {
+  background-color: #0f0f17;
+  color: #fff;
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+}
+
+.contacto-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #7f5dff, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contacto button {
+  background: #7f5dff;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contacto button:hover {
+  background: #5c3bcc;
+}
+
+.contacto-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-red {
+  background: linear-gradient(90deg, #7b2fff, #00ffd5);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0,255,213,0.5);
+}
+
+.footer {
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 768px) {
+  .contacto-footer {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .contacto-footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contacto-redes {
+    flex-direction: column; /* apila los botones */
+    gap: 0.8rem; /* menos espacio entre botones */
+    align-items: center;
+  }
+
+  .btn-red {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+  }
+
+  .btn-red:hover {
+    transform: none; /* en mobile no hace falta el salto */
+    box-shadow: 0 0 8px rgba(0,255,213,0.3);
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-red {
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+  }
+}
