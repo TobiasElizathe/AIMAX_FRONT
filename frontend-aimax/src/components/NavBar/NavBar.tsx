@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import AIMAX from "../../assets/Captura de pantalla 2025-08-20 174436.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
