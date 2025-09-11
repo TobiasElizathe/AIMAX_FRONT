@@ -5,7 +5,7 @@ import { Hero } from "../components/Hero/Hero";
 import { Productos } from "../components/Products/Products";
 import { Beneficios } from "../components/Benefits/Benefits";
 import { CasosUso } from "../components/UseCases/UseCases";
-import { Socios } from "../components/Testimonios/Socios";
+
 import { Footer } from "../components/Footer/Footer";
 import { CasosExito } from "../components/CasosDeExito/CasosExito";
 
@@ -43,7 +43,6 @@ const OnePage: React.FC = () => {
       <div ref={productosRef}><Productos /></div>
       <div ref={beneficiosRef}><Beneficios /></div>
       <div ref={casosRef}><CasosUso /></div>
-      <div ><Socios /></div>
       <div ><CasosExito /></div>
       <div ref={contactoRef}><Footer /></div>
     </div>
