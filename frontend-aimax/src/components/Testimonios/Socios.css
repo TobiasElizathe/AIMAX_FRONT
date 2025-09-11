@@ -1,0 +1,73 @@
+.socios {
+  padding: 6rem 3rem;
+  background: #0f0f17;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.socios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(90deg, #7b2fff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socios-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.socios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, max-content));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socio-card {
+  background: #1a1a28;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem; /* más chico que hero */
+  box-shadow: 0 0 20px rgba(123, 47, 255, 0.3);
+  cursor: default;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  text-align: center;
+}
+
+.socio-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gradient en el texto de cada nombre */
+.socio-card::after {
+  content: "";
+}
+
+.socio-card span {
+  background: linear-gradient(90deg, #ffffff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(123, 47, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .socios-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

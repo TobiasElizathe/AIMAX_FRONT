@@ -1,0 +1,97 @@
+.casos {
+  padding: 4rem 2rem;
+  background: #0f0f17;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.casos h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(90deg, #7b2fff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.casos-subtitle {
+  font-size: 1.05rem;
+  color: #bdbdbd;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Layout centrado y compacto */
+.casos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  align-items: stretch;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjetas */
+.caso-card {
+  background: #12121a;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  min-width: 220px;
+  max-width: 300px;
+  box-shadow: 0 6px 18px rgba(123, 47, 255, 0.12);
+  opacity: 0;
+  transform: translateY(28px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out, box-shadow 0.2s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Visible on scroll */
+.caso-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nombre del cliente */
+.caso-nombre {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nota o pequeño testimonio */
+.caso-nota {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #cfcfcf;
+  line-height: 1.25;
+}
+
+/* Hover efecto */
+.caso-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(123, 47, 255, 0.22);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .casos-container {
+    gap: 0.85rem;
+  }
+  .caso-card {
+    min-width: unset;
+    width: 100%;
+    max-width: 620px;
+  }
+  .casos h2 {
+    font-size: 2rem;
+  }
+}
