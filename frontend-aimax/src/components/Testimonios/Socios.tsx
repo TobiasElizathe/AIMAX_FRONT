@@ -7,7 +7,7 @@ export const Socios: React.FC = () => {
 
   const socios = [
     "Alejo Granados",
-    "Manuel Grabois , Dueño de Progrobal",
+    "Manuel Grabois",
   ];
 
   useEffect(() => {
