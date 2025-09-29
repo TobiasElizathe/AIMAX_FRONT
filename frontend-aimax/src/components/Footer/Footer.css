@@ -73,7 +73,13 @@
   font-size: 0.9rem;
   color: #aaa;
 }
-
+.linkedin{
+  font-size:1rem;
+  margin-bottom: 0.6rem;
+  background: linear-gradient(90deg, #7b2fff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:#00f0ff;
+}
 /* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 768px) {
   .contacto-footer {

@@ -39,6 +39,8 @@ export const Footer: React.FC = () => {
       <footer className="footer">
         <p>© {new Date().getFullYear()} AIMAX. Todos los derechos reservados.</p>
         <p>Rosario, Argentina</p>
+        <p>Web Developed by Tobias Elizathe</p>
+        <p className="linkedin"><a href="https://www.linkedin.com/in/tob%C3%ADas-elizathe-b54592266/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </footer>
     </section>
   );
