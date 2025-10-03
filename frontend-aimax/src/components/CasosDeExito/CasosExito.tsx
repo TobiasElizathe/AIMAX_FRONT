@@ -15,7 +15,7 @@ export const CasosExito: React.FC = () => {
     { nombre: "Renova" },
     { nombre: "Escuela Industrial de Santa Fe" },
     { nombre: "Estudio Baravalle & Granados" },
-
+    { nombre: "PROGLOBAL" },
   ];
 
   useEffect(() => {
