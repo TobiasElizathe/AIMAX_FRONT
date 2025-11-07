@@ -12,7 +12,7 @@ export const CasosExito: React.FC = () => {
 
   const clientes: Cliente[] = [
     { nombre: "Terminal6" },
-    { nombre: "Renova" },
+    { nombre: "Molino Dos Hermanos" },
     { nombre: "Escuela Industrial de Santa Fe" },
     { nombre: "Estudio Baravalle & Granados" },
     { nombre: "PROGLOBAL" },
