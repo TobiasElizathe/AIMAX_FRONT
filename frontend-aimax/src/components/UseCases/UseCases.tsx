@@ -3,7 +3,7 @@ import "./UseCases.css";
 import caso1 from "../../assets/educacion.webp";
 import caso2 from "../../assets/empresas.webp";
 import caso3 from "../../assets/arquitectura.webp";
-import caso4 from "../../assets/gobierno.jpg";
+import caso4 from "../../assets/gobierno.jpeg";
 
 interface CasoUso {
   titulo: string;

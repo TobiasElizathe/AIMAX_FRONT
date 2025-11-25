@@ -2,7 +2,7 @@ import "./Products.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-import producto3 from "../../assets/prod1.webp";
+import producto3 from "../../assets/prod1.jpeg";
 import producto1 from "../../assets/prod2.png";
 import producto2 from "../../assets/prod3.png";
 
