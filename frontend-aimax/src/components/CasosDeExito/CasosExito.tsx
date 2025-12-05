@@ -16,6 +16,7 @@ export const CasosExito: React.FC = () => {
     { nombre: "Escuela Industrial de Santa Fe" },
     { nombre: "Estudio Baravalle & Granados" },
     { nombre: "PROGLOBAL" },
+    { nombre: "Essential energy holding en conjunto con YPF (refinería San Lorenzo)" },
   ];
 
   useEffect(() => {
